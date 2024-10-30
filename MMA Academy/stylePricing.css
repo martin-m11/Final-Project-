@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+
+#navIcon:hover {
+    cursor: default;
+}
+
+#aboutTab:hover {
+    text-decoration: underline;
+}
+#serviceTab:hover {
+    text-decoration: underline;
+}
+#pricingTab:hover {
+    text-decoration: underline;
+}
+
+
+
+h3 {
+    text-align: center;
+    height: 60px;
+}
+
+h2 {
+    text-align: center;
+    height: 60px;
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+.paragraph {
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footers {
+    background-color: rgb(33, 33, 33);
+    height: 80px;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+.footerlinks {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding-left: 30px;
+    width: 100vw;
+}
+.footerlinks:hover {
+    text-decoration: underline;
+    color: white;
+    
+
+}
+
+.pricinglinks {
+    text-align: center;
+    text-decoration: none;
+}
+
+.pricinglinks:hover {
+    text-decoration: underline; 
+}
