@@ -1,3 +1,5 @@
+//attempt at creating a server that will interact with the stripe checkout api attempts have failed.
+
 require('dotenv').config()
 
 const express= require('express')

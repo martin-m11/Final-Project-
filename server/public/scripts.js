@@ -1,3 +1,6 @@
+// attemot to iniyialize button to redirect and create a stripe session with help of the an attempted server in server.js.
+
+
 const button =document.querySelector("button")
 button.addEventListener("click", () => {
     POST('/create-checkout-session', {
