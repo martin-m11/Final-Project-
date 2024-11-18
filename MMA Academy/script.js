@@ -1,7 +1,8 @@
+// API Interesection Observer Initialization.
+
 const firstSection = document.getElementById("firstSect")
 
 const secondSection = document.getElementById("secondSect")
-
 
 const thirdSection = document.getElementById("thirdSect")
 

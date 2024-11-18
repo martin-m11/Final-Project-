@@ -1,122 +1,65 @@
-1. Introduction
-This is a brief documentation of my experience and understanding of writing clean code with the focus on creating a fully responsive website using the best practices within HTML, CSS, JavaScript along with CSS framework of my choosing Bootstrap.
+FINAL PROJECT : MMA ACADEMY
 
-2. Project
-For my project I wanted to create a simple responsive website for people who were interested in combat sports.
+(1) Dependencies required;
 
-With what I have learned throughout this course
+Coding enviorment; Visual Studio Code (recomemnded).
+Drag the whole Folder into VS code.
+
+Using 'npm install' in Visual Studio code install the following;
+
+node.js
+react.js
+Bootstrap
+dotenv
+
+To install, Open Terminal, then New Terminal then install dependencies;
+
+(Installation example: 'npm istall node.js')
 
 
-My Best Practices for Using Bootstrap:
+In Visual Studio Code , left side, Click Extentions  search and install Live Server. 
 
-Grid System: I use Bootstrap's 12-column grid system to build layouts that adapt seamlessly to various screen sizes.
-Responsive Utilities: Media queries provided by Bootstrap help in conditionally showing or hiding elements depending on screen size.
-Custom Styles: Although Bootstrap provides utility classes, I create custom CSS for more specific design needs while adhering to Bootstrap's conventions.
-Sample Responsive Layout Using Bootstrap:
+This will host the project using your computer.
 
-html
-Copy code
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6 col-md-12">
-      <h2>Responsive Column</h2>
-      <p>This column adjusts based on screen size.</p>
-    </div>
-    <div class="col-lg-6 col-md-12">
-      <img src="example.jpg" class="img-fluid" alt="Responsive Image">
-    </div>
-  </div>
-</div>
-In this example:
+(2) To Run the project, Got to File then Open Folder, then select the folder to open. 
 
-The col-lg-6 and col-md-12 classes ensure that the layout adapts between large and medium devices, demonstrating a mobile-first design approach.
-4. JavaScript Best Practices
-JavaScript plays a crucial role in adding interactivity to a website. Writing clean and maintainable JavaScript is key to improving performance and reducing technical debt.
+The folder should have all the modules used inside it like the homepage.html style.css script.js ect.
 
-My Approach to JavaScript Best Practices:
+Once open  Click Explorer, then >FINAL PROJECTV5, then >MMA Academy,Right-click on homepage.html and Open with Live Server.
 
-Modularization: I break down JavaScript functionality into smaller, reusable modules. This keeps the code organized and avoids cluttering the global scope.
-Use of ES6+ Features: I prioritize modern JavaScript features such as let, const, arrow functions, and template literals for cleaner, more efficient code.
-Error Handling: I implement proper error handling using try/catch blocks and always provide informative error messages.
-Sample JavaScript:
+This will open the project in your browser under the Url http://localhost:3000 or  different port like; 127.0.0.1.
 
-javascript
-Copy code
-// Modular JavaScript
-const toggleMenu = () => {
-  const menu = document.querySelector('.menu');
-  menu.classList.toggle('menu--open');
-};
 
-document.querySelector('.menu-toggle').addEventListener('click', toggleMenu);
-In this example:
+(3) For Cloning the Repository.
 
-The code is kept modular, with the function toggleMenu clearly defined for specific functionality.
-The use of querySelector and modern DOM methods improves readability and performance.
-5. BEM (Block Element Modifier) Naming Convention
-BEM is a methodology that helps create reusable components and code sharing in front-end development. It encourages a clear structure by using a naming convention based on components.
+On GitHub, navigate to the main page of the repository.
 
-My Experience with BEM:
+Above the list of files, click  Code.
 
-Block: The component itself (e.g., .card).
-Element: A child of the component that has a specific function (e.g., .card__title).
-Modifier: A variation of the component (e.g., .card--primary).
-Example Using BEM in HTML and CSS:
+Screenshot of the list of files on the landing page of a repository. The "Code" button is highlighted with a dark orange outline.
+Copy the URL for the repository.
 
-html
-Copy code
-<div class="card card--primary">
-  <h3 class="card__title">Card Title</h3>
-  <p class="card__content">This is some card content.</p>
-</div>
-css
-Copy code
-.card {
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-}
+To clone the repository using HTTPS, under "HTTPS", click .
 
-.card--primary {
-  background-color: #007bff;
-  color: white;
-}
+To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click SSH, then click .
 
-.card__title {
-  font-size: 1.5rem;
-}
+To clone a repository using GitHub CLI, click GitHub CLI, then click .
 
-.card__content {
-  font-size: 1rem;
-}
-In this example:
+Screenshot of the "Code" dropdown menu. To the right of the HTTPS URL for the repository, a copy icon is outlined in dark orange.
+Open Git Bash.
 
-The card is the Block, card__title and card__content are Elements, and card--primary is a Modifier that alters the appearance of the card. This helps in keeping the CSS structured and scalable.
-6. Responsive Design Principles
-Responsive design is essential in modern web development. The goal is to ensure that the website looks and functions well on all devices, from desktops to smartphones.
+Change the current working directory to the location where you want the cloned directory.
 
-Responsive Design Best Practices I Apply:
+Type git clone, and then paste the URL you copied earlier.
 
-Mobile-First Design: I start designing for small screens first, progressively enhancing the design for larger screens.
-Fluid Grids: I use percentage-based grid systems (such as Bootstrap’s grid) to allow content to resize fluidly.
-Flexible Images: I ensure that images are responsive by using relative units like percentages and the img-fluid class in Bootstrap.
-Example of Mobile-First Design:
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+Press Enter to create your local clone.
 
-css
-Copy code
-/* Mobile styles */
-.container {
-  padding: 10px;
-}
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `Spoon-Knife`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
 
-/* Larger screen styles */
-@media (min-width: 768px) {
-  .container {
-    padding: 20px;
-  }
-}
-In this example:
 
-The container padding is small on mobile but increases on larger screens, ensuring that the layout adapts to the device size.
-7. Conclusion
-My experience with clean code structure, Astro templates, Bootstrap, and JavaScript involves adhering to best practices such as modular design, responsive principles, and BEM conventions. These practices ensure that the code is maintainable, scalable, and optimized for performance. By using modern tools like Astro, along with established frameworks like Bootstrap, I’m able to build applications that are both easy to maintain and deliver excellent user experiences across devices.

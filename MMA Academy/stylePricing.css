@@ -5,10 +5,23 @@
 }
 body {
     overflow-x: hidden;
+    
     width: 100%;
-    height: 100%vh;
+
+  
     animation: scroll-in;
 }
+
+
+
+header {
+    animation: scroll-in 1s;
+}
+section {
+    animation: scroll-in 1s;
+    height: 100%;
+}
+
 
 
 @keyframes scroll-in {
@@ -54,6 +67,12 @@ h2 {
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
 }
+.card-text {
+    text-align: center;
+}
+.Dates {
+    text-align: center;
+}
 
 .footers {
     background-color: rgb(33, 33, 33);
@@ -61,6 +80,7 @@ h2 {
     text-align: center;
     color: white;
     padding-top: 30px;
+    animation: scroll-in 1s;
 }
 
 .footerlinks {
@@ -73,7 +93,10 @@ h2 {
 .footerlinks:hover {
     text-decoration: underline;
     color: white;
-    
+}
+.Pricing {
+    text-align: center; 
+    font-size: 1.5em;
 
 }
 
@@ -84,4 +107,5 @@ h2 {
 
 .pricinglinks:hover {
     text-decoration: underline; 
+
 }

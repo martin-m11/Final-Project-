@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="paypal_style.css">
+
+ 
+</head>
+<body>
+    
+ <!--PayPal API button link to the Server-->
+  <div id="paypal-button-container-P-1K5277518U314191DM42OSAY"></div>
+  <script src="https://www.paypal.com/sdk/js?client-id=AVVK08AmVGyhjD-7siU8F_MiHoS78eJ9qgZpucMnhfOWUlqGeet7X5wA2BShRGG-8Kt6UonYeShM6nI1&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+  <script>
+    paypal.Buttons({
+        style: {
+            shape: 'pill',
+            color: 'gold',
+            layout: 'vertical',
+            label: 'subscribe'
+        },
+        createSubscription: function(data, actions) {
+          return actions.subscription.create({
+            /* Creates the subscription */
+            plan_id: 'P-1K5277518U314191DM42OSAY'
+          });
+        },
+        onApprove: function(data, actions) {
+          alert(data.subscriptionID); // You can add optional success message for the subscriber here
+        }
+    }).render('#paypal-button-container-P-1K5277518U314191DM42OSAY'); // Renders the PayPal button
+  </script>
+<p>Test button to show the use of the Paypal API, do not add Personal details for saftey</p>
+<div>
+<a href="Homepage.html"><p>Click here to return to the Homepage</p></a>
+</div>
+
+    
+</body>
+</html>
+
+<!-- stripe test enviroment before intergrating with my project-->
